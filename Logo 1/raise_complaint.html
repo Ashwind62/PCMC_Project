@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Raise Complaint / Correction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #004c8c;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+    select, input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+    option {
+      padding: 5px;
+    }
+    .logo-option {
+      display: flex;
+      align-items: center;
+    }
+    button {
+      background: #004c8c;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Raise Complaint / Correction</h1>
+  <form>
+    <label for="category">Category Type</label>
+    <select id="category" name="category">
+      <option value="property_tax">🏠 Property Tax</option>
+      <option value="water_tax">💧 Water Tax</option>
+      <option value="trade_license">🏪 Trade License</option>
+      <option value="health">🏥 Health Department</option>
+      <option value="mahavitaran">⚡ Mahavitaran</option>
+    </select>
+
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <label for="mobile">Mobile Number</label>
+    <input type="text" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number">
+
+    <label for="email">Email ID</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+    <label for="message">Complaint/Correction Details</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your complaint here..."></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

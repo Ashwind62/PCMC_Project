@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thane Municipal Corporation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+      nav {
+        background-color: #004c8c;
+        border-bottom: 2px solid #008080;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      nav ul li {
+        margin: 0;
+      }
+      nav ul li a {
+        display: block;
+        padding: 15px 25px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      nav ul li a:hover {
+        background-color: #008080;
+        color: white;
+      }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f0f4f8 url('tmc_watermark.png') no-repeat center center fixed;
+      background-size: 600px;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #004c8c, #008080);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header img {
+      width: 75px;
+      position: absolute;
+      left: 20px;
+      top: 15px;
+      animation: pulse 3s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      animation: fadeInZoom 1.5s ease;
+    }
+    @keyframes fadeInZoom {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .department {
+      background: white;
+      padding: 25px;
+      border-left: 6px solid #004c8c;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .department:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+    .department img {
+      float: right;
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+    }
+    .department h2 {
+      color: #004c8c;
+      margin-top: 0;
+    }
+    .department p {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.6;
+    }
+    footer {
+      background: #004c8c;
+      color: white;
+      text-align: center;
+      padding: 16px 0;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="TMC Logo">
+    <h1>THANE MUNICIPAL CORPORATION</h1>
+  
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Municipal Services</a></li>
+        <li><a href="about_thane.html">About Thane</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <style>
+      nav {
+        background-color: #004c8c;
+        border-bottom: 2px solid #008080;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      nav ul li {
+        margin: 0;
+      }
+      nav ul li a {
+        display: block;
+        padding: 15px 25px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      nav ul li a:hover {
+        background-color: #008080;
+        color: white;
+      }
+
+      nav {{
+        background-color: #ffffff;
+        border-bottom: 2px solid #008080;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }}
+      nav ul {{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+      }}
+      nav ul li {{
+        margin: 0;
+      }}
+      nav ul li a {{
+        display: block;
+        padding: 15px 25px;
+        color: #004c8c;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: background-color 0.3s, color 0.3s;
+      }}
+      nav ul li a:hover {{
+        background-color: #008080;
+        color: white;
+      }}
+    </style>
+    </header>
+    
+
+  <section>
+
+    <div class="department">
+      <a href="departments/property_tax.html" style="text-decoration:none; color:inherit;">
+        <img src="property_tax_logo.png" alt="property_tax logo">
+        <h2>Property Tax</h2>
+        <p>Registration, tax payment, recovery, and abstract reporting.</p>
+      </a>
+    </div>
+    
+    <div class="department">
+      <a href="departments/trade.html" style="text-decoration:none; color:inherit;">
+        <img src="trade_logo.png" alt="trade logo">
+        <h2>Trade</h2>
+        <p>Registrations, inspections, fee collection, and public grievance handling.</p>
+      </a>
+    </div>
+    
+    <div class="department">
+      <a href="departments/water.html" style="text-decoration:none; color:inherit;">
+        <img src="water_logo.png" alt="water logo">
+        <h2>Water</h2>
+        <p>High-resolution image processing for water network analysis and decision-making.</p>
+      </a>
+    </div>
+    
+    <div class="department">
+      <a href="departments/igr.html" style="text-decoration:none; color:inherit;">
+        <img src="igr_logo.png" alt="igr logo">
+        <h2>Igr</h2>
+        <p>Linking property tax with IGR for real-time registration of mutation, ownership, rent agreement registration, and capital value-based taxation.</p>
+      </a>
+    </div>
+    
+    <div class="department">
+      <a href="departments/health.html" style="text-decoration:none; color:inherit;">
+        <img src="health_logo.png" alt="health logo">
+        <h2>Health</h2>
+        <p>Door-to-door garbage collection and segregation, along with surveys for all health facilities and schemes.</p>
+      </a>
+    </div>
+    
+    <div class="department">
+      <a href="departments/birth_death.html" style="text-decoration:none; color:inherit;">
+        <img src="birth_death_logo.png" alt="birth_death logo">
+        <h2>Birth Death</h2>
+        <p>Death and birth certificate number linking with property tax.</p>
+      </a>
+    </div>
+    
+    <div class="department">
+      <a href="departments/mahila.html" style="text-decoration:none; color:inherit;">
+        <img src="mahila_logo.png" alt="mahila logo">
+        <h2>Mahila</h2>
+        <p>Women and child welfare activities and scheme registration.</p>
+      </a>
+    </div>
+    
+    <div class="department">
+      <a href="departments/handicap.html" style="text-decoration:none; color:inherit;">
+        <img src="handicap_logo.png" alt="handicap logo">
+        <h2>Handicap</h2>
+        <p>Handicap survey, beneficiary identification, and scheme facilitation.</p>
+      </a>
+    </div>
+    
+    <div class="department">
+      <a href="departments/mahavitaran.html" style="text-decoration:none; color:inherit;">
+        <img src="mahavitaran_logo.png" alt="mahavitaran logo">
+        <h2>Mahavitaran</h2>
+        <p>Electricity-related services, billing, and integration.</p>
+      </a>
+    </div>
+    
+    <div class="department">
+      <a href="departments/fire.html" style="text-decoration:none; color:inherit;">
+        <img src="fire_logo.png" alt="fire logo">
+        <h2>Fire</h2>
+        <p>Fire NOC issuance and property inspections.</p>
+      </a>
+    </div>
+    
+    <div class="department">
+      <a href="departments/slum.html" style="text-decoration:none; color:inherit;">
+        <img src="slum_logo.png" alt="slum logo">
+        <h2>Slum</h2>
+        <p>Identification and planning of slum areas. Waste collection using auto-tippers or rickshaws.</p>
+      </a>
+    </div>
+    
+  </section>
+  <footer>
+    &copy; 2025 Thane Municipal Corporation. All rights reserved.
+  </footer>
+</body>
+</html>

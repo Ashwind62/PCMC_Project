@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pay Property Tax</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f4f4f9;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #004c8c;
+    }
+    .container {
+      background: white;
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    th {
+      background: #004c8c;
+      color: white;
+    }
+    .pay-options {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .pay-options button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      background: #004c8c;
+      color: white;
+      cursor: pointer;
+    }
+    #qr {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+    img.qr-code {
+      max-width: 200px;
+    }
+  </style>
+  <script>
+    function showQR() {
+      document.getElementById('qr').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <h1>Property Tax Receipt</h1>
+  <div class="container">
+    <div class="section">
+      <p><strong>Block No:</strong> 12A</p>
+      <p><strong>Building ID:</strong> BLG-3098</p>
+      <p><strong>Property Description:</strong> Residential</p>
+      <p><strong>Owner's Name:</strong> Rajesh Kumar</p>
+      <p><strong>Apartment/Society:</strong> Shree Residency</p>
+      <p><strong>Property Address:</strong> Thane West, Maharashtra</p>
+      <p><strong>Email ID:</strong> rajesh@example.com</p>
+      <p><strong>Assessment Type:</strong> Self</p>
+      <p><strong>Construction Type:</strong> RCC</p>
+      <p><strong>Build Type:</strong> Apartment</p>
+      <p><strong>Date of Assessment:</strong> 2025-04-01</p>
+    </div>
+
+    <div class="section">
+      <h3>Summary Table</h3>
+      <table>
+        <tr>
+          <th>Description</th>
+          <th>Non-Residential</th>
+          <th>Aminity</th>
+          <th>Residential</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>No. of Properties</td>
+          <td>2</td>
+          <td>1</td>
+          <td>3</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Taxable Area (sq. mtr.)</td>
+          <td>120</td>
+          <td>80</td>
+          <td>200</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>Retable Value</td>
+          <td>₹2,00,000</td>
+          <td>₹1,50,000</td>
+          <td>₹2,50,000</td>
+          <td>₹6,00,000</td>
+        </tr>
+        <tr>
+          <td>Total Tax</td>
+          <td>₹12,000</td>
+          <td>₹9,000</td>
+          <td>₹15,000</td>
+          <td>₹36,000</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>Tax Bifurcation</h3>
+      <table>
+        <tr>
+          <th>Tax Type</th>
+          <th>Amount (₹)</th>
+        </tr>
+        <tr><td>Property Tax</td><td>18,000</td></tr>
+        <tr><td>Sanitation Tax</td><td>4,000</td></tr>
+        <tr><td>Water Tax</td><td>6,000</td></tr>
+        <tr><td>Education Cess</td><td>2,000</td></tr>
+        <tr><td>Fire Cess</td><td>1,000</td></tr>
+        <tr><td>Miscellaneous</td><td>5,000</td></tr>
+        <tr>
+          <th>Total Rs.</th>
+          <th>₹36,000</th>
+        </tr>
+      </table>
+    </div>
+
+    <div class="pay-options">
+      <h3>Proceed to Payment</h3>
+      <button onclick="showQR()">UPI</button>
+      <button>Net Banking</button>
+    </div>
+
+    <div id="qr">
+      <h4>Scan to Pay</h4>
+      <img src="qr_code_random.png" class="qr-code" alt="UPI QR Code">
+    </div>
+  </div>
+</body>
+</html>

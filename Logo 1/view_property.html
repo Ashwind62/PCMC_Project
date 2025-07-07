@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Property Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f4f4f9;
+      padding: 20px;
+    }
+    h1 {
+      color: #004c8c;
+      text-align: center;
+    }
+    .form-box {
+      background: white;
+      padding: 25px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label, input, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #004c8c;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    function showOtp() {
+      document.getElementById('otp-box').classList.remove('hidden');
+    }
+    function verifyOtp() {
+      const otp = document.getElementById('otp').value;
+      if (otp === '0000') {
+        document.getElementById('property-details').classList.remove('hidden');
+      } else {
+        alert('Invalid OTP');
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>View Your Property Details</h1>
+  <div class="form-box">
+    <label for="mobile">Enter Mobile Number</label>
+    <input type="text" id="mobile" placeholder="10-digit mobile number">
+    <button onclick="showOtp()">Submit</button>
+  </div>
+
+  <div class="form-box hidden" id="otp-box">
+    <label for="otp">Enter OTP (default: 0000)</label>
+    <input type="text" id="otp">
+    <button onclick="verifyOtp()">Verify OTP</button>
+  </div>
+
+  <div class="form-box hidden" id="property-details">
+    <h3>Property Details</h3>
+    <p><strong>Owner Name:</strong> Rajesh Kumar</p>
+    <p><strong>Occupier Name:</strong> Anjali Sharma</p>
+    <p><strong>Carpet Area:</strong> 750 sq.ft</p>
+    <p><strong>Built Up Area:</strong> 950 sq.ft</p>
+    <p><strong>Email ID:</strong> rajesh@example.com</p>
+    <p><strong>Mobile No:</strong> 9876543210</p>
+    <p><strong>Location:</strong> Thane West</p>
+    <p><strong>Latitude:</strong> 19.2183</p>
+    <p><strong>Longitude:</strong> 72.9781</p>
+    <p><strong>Photo:</strong><br><img src="property.jpg" width="100%"></p>
+    <p><strong>Double Lined Plan:</strong><br><img src="plan.jpg" width="100%"></p>
+  </div>
+</body>
+</html>

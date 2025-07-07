@@ -1,0 +1,88 @@
+.container {
+  padding: 20px;
+}
+
+h1 {
+  color: #444;
+  margin-bottom: 50px;
+}
+
+.services-circle {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.center-logo {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 290px;
+  left: 290px;
+  z-index: 10;
+}
+
+.service {
+  position: absolute;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.service p {
+  margin: 0;
+  color: #666;
+}
+
+/* Positioning Services */
+.service-top {
+  top: 0;
+  left: 275px;
+}
+.service-top-right {
+  top: 70px;
+  right: 40px;
+}
+.service-right {
+  top: 275px;
+  right: 0;
+}
+.service-bottom-right {
+  bottom: 70px;
+  right: 40px;
+}
+.service-bottom {
+  bottom: 0;
+  left: 275px;
+}
+.service-bottom-left {
+  bottom: 70px;
+  left: 40px;
+}
+.service-left {
+  top: 275px;
+  left: 0;
+}
+.service-top-left {
+  top: 70px;
+  left: 40px;
+}
+.service-top-left-alt {
+  top: 120px;
+  left: 100px;
+}
+.service-top-left-most {
+  top: 180px;
+  left: 10px;
+}
